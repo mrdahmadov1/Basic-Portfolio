@@ -1,0 +1,180 @@
+:root{
+    --teal: #4aaaa5;
+    --text-color: #777777;
+    --header-bg-color: #ffffff;
+    --main-bg-color:#ffffff;
+    --header-border-color: #cccccc;
+    --main-border-color: #dddddd;
+    --footer-bg-color: #666666;
+
+    --entire-width: 960px;
+    --main-width: 650px;
+    --sidebar-width: 270px;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body, html{
+    background-image: url(../images/moroccan-flower.png);
+    font-size: 18px;
+    line-height: 34px;
+}
+
+h1, h2, h3{
+    color: var(--teal);
+    font-family: 'Georgia', 'Times New Roman', Times, serif;
+}
+
+h1, h2{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+h3{
+    font-size: 22px;
+}
+
+p, a{
+    color: var(--text-color);
+    font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+.container{
+    clear: both;
+    width: 960px;
+    margin: 0 auto;
+}
+
+/* header start */
+
+header{
+    margin-bottom: 30px;
+    background-color: var(--header-bg-color);
+    border-bottom: 1px solid var(--header-border-color);
+}
+
+header::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+header .logo{
+    float: left;
+    padding: 20px 30px;
+    background-color: var(--teal);
+}
+
+header .logo a{
+    color: var(--header-bg-color);
+}
+
+header .navbar{
+    float: right;
+    padding: 20px;
+    padding-right: 0px;
+}
+
+header .navbar ul li{
+    display: inline;
+}
+
+header .navbar ul li a{
+    padding: 10px 15px;
+}
+
+header .navbar ul li:nth-child(3) a{
+    padding-right: 0;
+}
+
+/* header end */
+
+/* about me start */
+
+main::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+
+main .about-me, main .connect-me{
+    padding: 30px;
+}
+
+main .about-me{
+    background-color: var(--main-bg-color);
+    width: var(--main-width);
+    float: left;
+}
+
+main .about-me .title{
+    padding-bottom: 20px;
+    border-bottom: 2px solid var(--text-color);
+}
+
+main .about-me img{
+    width: 150px;
+    float: left;
+    margin-right: 20px;
+}
+
+main .about-me p{
+    margin-top: 20px;
+    line-height: 32px;
+}
+
+main .connect-me{
+    float: right;
+    background-color: var(--main-bg-color);
+    width: var(--sidebar-width);
+}
+
+main .connect-me .title{
+    font-weight: bold;
+    padding-bottom: 15px;
+    border-bottom: 1px solid var(--text-color);
+}
+
+main .connect-me .content{
+    margin-top: 15px;
+}
+
+main .connect-me .content ul li{
+    display: inline;
+}
+
+main .connect-me .content ul li:nth-child(3) a img{
+    width: 57px;
+    margin-bottom: 3px;
+}
+
+/* about me end */
+
+/* footer start */
+
+footer{
+    background-color: var(--footer-bg-color);
+    border-top: 10px solid var(--teal);
+    margin-top: auto;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+footer p{
+    color: white;
+    font-size: 12px;
+    padding: 15px;
+    text-align: center;
+    clear: both;
+}
+
+/* footer end */
+
+/* portfolio start */
+
+
+
+/* portfolio end */
