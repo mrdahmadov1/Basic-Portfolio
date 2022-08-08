@@ -1,8 +1,8 @@
-:root{
+:root {
     --teal: #4aaaa5;
     --text-color: #777777;
     --header-bg-color: #ffffff;
-    --main-bg-color:#ffffff;
+    --main-bg-color: #ffffff;
     --header-border-color: #cccccc;
     --main-border-color: #dddddd;
     --footer-bg-color: #666666;
@@ -12,36 +12,41 @@
     --sidebar-width: 270px;
 }
 
-*{
+* {
     box-sizing: border-box;
 }
 
-body, html{
+body,
+html {
     background-image: url(../images/moroccan-flower.png);
     font-size: 18px;
     line-height: 34px;
 }
 
-h1, h2, h3{
+h1,
+h2,
+h3 {
     color: var(--teal);
     font-family: 'Georgia', 'Times New Roman', Times, serif;
 }
 
-h1, h2{
+h1,
+h2 {
     font-size: 30px;
     font-weight: bold;
 }
 
-h3{
+h3 {
     font-size: 22px;
 }
 
-p, a{
+p,
+a {
     color: var(--text-color);
     font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
 }
 
-.container{
+.container {
     clear: both;
     width: 960px;
     margin: 0 auto;
@@ -49,45 +54,47 @@ p, a{
 
 /* header start */
 
-header{
+header {
     position: fixed;
-    top: 0; left: 0; right: 0;
+    top: 0;
+    left: 0;
+    right: 0;
     z-index: 999;
     background-color: var(--header-bg-color);
     border-bottom: 1px solid var(--header-border-color);
 }
 
-header::after{
+header::after {
     content: "";
     display: block;
     clear: both;
 }
 
-header .logo{
+header .logo {
     float: left;
     padding: 20px 30px;
     background-color: var(--teal);
 }
 
-header .logo a{
+header .logo a {
     color: var(--header-bg-color);
 }
 
-header .navbar{
+header .navbar {
     float: right;
     padding: 20px;
     padding-right: 0px;
 }
 
-header .navbar ul li{
+header .navbar ul li {
     display: inline;
 }
 
-header .navbar ul li a{
+header .navbar ul li a {
     padding: 10px 15px;
 }
 
-header .navbar ul li:nth-child(3) a{
+header .navbar ul li:nth-child(3) a {
     padding-right: 0;
 }
 
@@ -95,63 +102,64 @@ header .navbar ul li:nth-child(3) a{
 
 /* about me start */
 
-main{
+main {
     margin-top: 105px;
 }
 
-main::after{
+main::after {
     content: "";
     clear: both;
     display: block;
 }
 
-main .about-me, main .connect-me{
+main .about-me,
+main .connect-me {
     padding: 30px;
 }
 
-main .about-me{
+main .about-me {
     background-color: var(--main-bg-color);
     width: var(--main-width);
     float: left;
 }
 
-main .about-me .title{
+main .about-me .title {
     padding-bottom: 20px;
     border-bottom: 2px solid var(--text-color);
 }
 
-main .about-me img{
+main .about-me img {
     width: 150px;
     float: left;
     margin-right: 20px;
 }
 
-main .about-me p{
+main .about-me p {
     margin-top: 20px;
     line-height: 32px;
 }
 
-main .connect-me{
+main .connect-me {
     float: right;
     background-color: var(--main-bg-color);
     width: var(--sidebar-width);
 }
 
-main .connect-me .title{
+main .connect-me .title {
     font-weight: bold;
     padding-bottom: 15px;
     border-bottom: 1px solid var(--text-color);
 }
 
-main .connect-me .content{
+main .connect-me .content {
     margin-top: 15px;
 }
 
-main .connect-me .content ul li{
+main .connect-me .content ul li {
     display: inline;
 }
 
-main .connect-me .content ul li:nth-child(3) a img{
+main .connect-me .content ul li:nth-child(3) a img {
     width: 57px;
     margin-bottom: 3px;
 }
@@ -160,7 +168,7 @@ main .connect-me .content ul li:nth-child(3) a img{
 
 /* footer start */
 
-footer{
+footer {
     background-color: var(--footer-bg-color);
     border-top: 10px solid var(--teal);
     margin-top: auto;
@@ -169,7 +177,7 @@ footer{
     bottom: 0;
 }
 
-footer p{
+footer p {
     color: white;
     font-size: 12px;
     padding: 15px;
@@ -181,7 +189,7 @@ footer p{
 
 /* portfolio start */
 
-main .content .box{
+main .content .box {
     width: 275px;
     height: 205px;
     float: left;
@@ -189,33 +197,72 @@ main .content .box{
     position: relative;
 }
 
-main .content .box img{
+main .content .box img {
     width: 100%;
     opacity: .75;
 }
 
-main .content .box:nth-child(2n+1){
+main .content .box:nth-child(2n+1) {
     margin: 30px;
     margin-left: 0;
 }
 
-main .content .box h2{
+main .content .box h2 {
     background-color: var(--teal);
     text-align: center;
     position: absolute;
-    left: 0; right: 0; bottom: 10px;
+    left: 0;
+    right: 0;
+    bottom: 10px;
     padding: 10px;
     font-size: 22px;
     font-weight: bold;
 }
 
-main .content .box h2 a{
+main .content .box h2 a {
     color: white;
 }
 
-footer.for-portfolio{
+footer.for-portfolio {
     position: static;
     margin-top: 30px;
 }
 
 /* portfolio end */
+
+/* contact start */
+
+form {
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+label,
+input,
+button,
+textarea {
+    display: block;
+}
+
+input,
+textarea {
+    width: 100%;
+    font-size: 16px;
+    margin-bottom: 10px;
+    padding: 10px 5px;
+    border: 1px solid var(--header-border-color);
+}
+
+textarea {
+    resize: none;
+}
+
+button {
+    border: none;
+    background-color: var(--teal);
+    color: white;
+    font-size: 20px;
+    padding: 10px 15px;
+}
+
+/* contact end  */
